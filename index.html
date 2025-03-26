@@ -3,75 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>diti.io</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Diti.io Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-       <!-- Navigation -->
-<section class="landing-page">
-    <nav class="navbar">
-        <div class="logo">dit.io</div>
-        <ul class="nav-links">
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-        <div class="nav-buttons">
-            <a href="#" class="login">Log in</a>
-            <a href="#" class="signup">Sign up</a>
-        </div>
-    </nav>
-    <!-- left-side of the landing page -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo"><p>d</p> <span>diti.io</span></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+        <button class="btn-login" type="submit">Log In </button>
+        <button class="btn" type="submit">Sign Up</button>
+    </header>
+    
+
+    <!-- HERO SECTION -->
     <section class="hero">
-        <div class="text-content">
-            <h1 class="text-header">Improve the way <span class="highlight"><br>you charge</span>,<br> with one click</h1>
-            <p class="text-context-paragraph">Deski delivered blazing fast performance, striking word solution</p>
+        <div class="hero-content">
+            <h1>Improve the <span class="highlight">way you charge</span>, with one click</h1>
+            <p>Deski delivers blazing fast performance, making your business better.</p>
+            <!-- <div class="btn-group">
+                <button class="apple-page-button"><i class="fa-brands fa-apple" id="apple-button"></i>App store</button>
+
+                <button class="btn">App Store</button>
+                <button class="btn secondary">Play Store</button>
+            </div> -->
             <div class="buttons">
                 <div>
-                    <button class="apple-page-button"><i class="fa-brands fa-apple" id="apple-button"></i>App store</button>
+                    <button class="apple-page-buttons"><i class="fa-brands fa-apple" id="apple-button"></i>App store</button>
                 </div>
                 <div>
-                    <button class="play-page-button"><i class="fa-brands fa-google-play" id="store-button"></i>Play store</button>
+                    <button class="play-page-buttons"><i class="fa-brands fa-google-play" id="store-button"></i>Play store</button>
                 </div>
             </div>
-            <p class="contact">Different Platform? <a href="#">Contact us</a></p>
         </div>
-        <!-- right side of the landing page -->
-        <div class="image-content">
-            <div class="profile-card">
-                <div class="user-info">
-                    <img src="images/Screenshot from 2025-03-25 15-54-14.png" alt="User Image" class="user-img">
-                    <div class="tech-style">
-                        <p class="name">Roger Westervelt</p>
-                        <p class="title">Technical Assistant<br><span class="company">Oculus</span></p>
-                    </div>
-                </div>
-                <p class="stats">22 Worked days</p>
-                <div class="salary">
-                    <p>€ 1,500 <span>Monthly salary</span></p>
-                    <p>€ 750 <span>Salary available</span></p>
-                </div>
-                <div class="progress">
-                    <p>Fast uploading</p>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                    <span>73%</span>
- 
-                </div>
-                <img src="images/fresh-name.png" class="shocked-man" alt="shocked white man">
-                <div class="img-notification">
-                    <h2>Fast uploading</h2>
-                    <p>AVg speed</p>
-                </div>
-            </div>
-        </div> 
+        <div class="hero-image">
+            <img src="images/landing-page.png" alt="Hero Image">
+        </div>
     </section>
-</section>
-<!-- section of companies -->
+    <!-- section of companies -->
     <section class="partners">
         <p class="partners-paragraph"> Over <span class="partners-num"> 32k+</span> software business growing with dit.io</p>
         <div>
@@ -114,110 +96,114 @@
             </div>
         </div>
     </section>
+
+
+    <!-- FEATURES SECTION -->
     <section class="features">
-        <h2 class="features-header">The <span class="highlight">Product</span> we work with</h2>
-        <div class="feature-cards">
-            <div class="card"> 
+        <h2>The <span class="highlights">Product</span> we work with</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
                 <i class="fa-solid fa-star" id="star-icon"></i>
                 <h3>Easy Interface</h3>
-                <p>Dit.io delivered blazing fast performance</p>
+                <p>Simple and user-friendly experience.</p>
             </div>
-            <div class="card">
+            <div class="feature-box">
                 <i class="fa-solid fa-water-ladder"id="security-icon"></i>
+
                 <h3>Secured Transfers</h3>
-                <p>Dit.io delivered blazing fast performance</p>
+                <p>Safe and fast transactions.</p>
             </div>
-            <div class="card">
+            <div class="feature-box">
                 <i class="fa-solid fa-eye-dropper" id="drop-icon"></i>
                 <h3>24/7 Support</h3>
-                <p>Dit.io delivered blazing fast performance</p>
+                <p>Always available for help.</p>
             </div>
         </div>
     </section>
-    <!-- report numbers of diti section -->
-    <section>
-        <div class="container">
-            <div class="left-section">
-                <h1>Okay, Let's see <span>diti.io</span> in numbers</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit aliquam a rhoncus. Aliquam nec platea.</p>
-                <div class="numbers-section">
-                    <div class="number-item">
-                        <h2>50.4K</h2>
-                        <p>Downloads</p>
-                    </div>
-                    <div class="number-item">
-                        <h2>20K</h2>
-                        <p>Active users</p>
-                    </div>
-                    <div class="number-item">
-                        <h2>300+</h2>
-                        <p>Using group</p>
-                    </div>
-                    <div class="number-item">
-                        <h2>10K+</h2>
-                        <p>Subscribers</p>
+        <!-- report numbers of diti section -->
+        <section>
+            <div class="container">
+                <div class="left-section">
+                    <h1>Okay, Let's see <span>diti.io</span> in numbers</h1>
+                    <p class="diti-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit aliquam a rhoncus. Aliquam nec platea.</p>
+                    <div class="numbers-section">
+                        <div class="number-item">
+                            <h2>50.4K</h2>
+                            <p>Downloads</p>
+                        </div>
+                        <div class="number-item">
+                            <h2>20K</h2>
+                            <p>Active users</p>
+                        </div>
+                        <div class="number-item">
+                            <h2>300+</h2>
+                            <p>Using group</p>
+                        </div>
+                        <div class="number-item">
+                            <h2>10K+</h2>
+                            <p>Subscribers</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="right-section">
-                <div class="card">
-                    <h3>How to create account</h3>
-                    <p>Study stream via live time with our apps</p>
-                    <button>Watch</button>
-                </div>
-                <div class="card study-with-me">
-                    <h3>Study with me</h3>
-                    <p>Study stream via live time with our apps</p>
-                    <button>Join</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- mobile interface -->
-    <section class="mobile-interface">
+                <div class="right-section">
+                    <img src="images/Screenshot from 2025-03-28 10-08-08.png" class="user-img">
+                </div>   
+            </div> 
+
+        </section>
+        <!-- mobile interface section -->
+        <section class="mobile-interface">
         
-        <h1 class="app-interface-header">We are helping<br> <span class="red-text">customers globally</span> everytime.</h1>
-    <div class="app-interface">
-        <div class="content">
-            <h2>Mobile App Interface</h2>
-            <p>Deski delivered blazing fast performance, striking word solution. Our company will be the best ever soon in the industry.</p>
-            <button class="btn">Know more</button>
+            <h1 class="app-interface-header">We are helping<br> <span class="red-text">customers globally</span> everytime.</h1>
+        <div class="app-interface">
+            <div class="content">
+                <h2>Mobile App Interface</h2>
+                <p>Deski delivered blazing fast performance, striking word solution. Our company will be the best ever soon in the industry.</p>
+                <button class="btn" type="submit">Know more</button>
+            </div>
+            <div class="images">
+                <img src="images/Screenshot from 2025-03-26 06-46-06.png" alt="Settings UI">
+                <img src="images/Screenshot from 2025-03-26 06-47-06.png" alt="Social App UI">
+            </div>
         </div>
-        <div class="images">
-            <img src="images/Screenshot from 2025-03-26 06-46-06.png" alt="Settings UI">
-            <img src="images/Screenshot from 2025-03-26 06-47-06.png" alt="Social App UI">
-        </div>
-    </div>
-    </section>
-    <!-- testimonial section -->
+        </section>
+
+    <!-- TESTIMONIALS -->
     <section class="testimonials">
-        <h2 class="highlight-header"><span class="highlight">Some words</span> from our clients</h2>
+        <h2><span class="highlight">Some words</span> from our clients</h2>
         <div class="testimonial-container">
             <div class="testimonial">
-                <img src="images/lady.jpeg" alt="Edwin Zohir" class="profile-pic">
-                <h1 class="names">Edwin Zohir</h1>
-                <p class="role">Businessman</p>
-                <p class="review">We make all payments easier and simpler. DPay makes moving money as simple as ever.</p>
-                <span class="rating"> 5.0</span>
+                <img src="images/lady.jpeg" alt="User 1">
+                <h4>Edwin Zohir</h4>
+                <p class="testimony-paragraph">We make all payments easier.
+                    Receive and send payment funds without cash.
+                    DPay makes moving money as simple.
+                     jrjer hnf ke cjrf fjvfoi40owef eroikfbv
+                </p>
+                <span> &#127775; 5.0</span>
             </div>
             <div class="testimonial">
-                <img src="images/white-lady.png" alt="Jecson Mokbul" class="profile-pic">
-                <h1 class="names">Jecson Mokbul</h1>
-                <p class="role">Businessman</p>
-                <p class="review">We make all payments easier and simpler. DPay makes moving money as simple as ever.</p>
-                <span class="rating">5.0</span>
+                <img src="images/ladyy.jpeg" alt="User 2">
+                <h4>Jecson Mokbul</h4>
+                <p class="testimony-paragraph">Safe, fast, and reliable payments.
+                    Receive and send payment funds without cash.
+                    DPay makes moving money as simple.
+                     jrjer hnf ke cjrf fjvfoi40owef eroikfbv
+                </p>
+                <span>&#127775; 5.0</span>
             </div>
         </div>
     </section>
-    <!-- app download section -->
-    <section>
+
+      <!-- app download section -->
+      <section>
         <div class="app-download">
             <div>
                  <img src="images/phoneman.png" class="app-image">
             </div>
             <div class="download-statistics">
                 <p class="users">Over <strong>50,000+</strong> Users</p>
-                <h2>Download diti.io Mobile App</h2>
+                <h2 class="diti-apps">Download diti.io Mobile App</h2>
                 <div class="buttons">
                     <div>
                         <button class="apple-page-button"><i class="fa-brands fa-apple" id="apple-button"></i>App store</button>
@@ -231,6 +217,8 @@
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
             <!-- Logo and Social Icons -->
@@ -286,7 +274,5 @@
     </footer>
 
 
-
-    
 </body>
 </html>
