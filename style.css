@@ -201,8 +201,10 @@
 .partners-paragraph{
     font-size: 36px;
     color: rgb(77, 75, 75);
-   margin-left: 600px;
-   margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 .partners-num{
     font-size: 37px;
@@ -432,6 +434,7 @@ p {
     padding: 50px;
 
 
+
 }
 .highlight-header{
     font-size: 50px;
@@ -480,7 +483,9 @@ p {
 .role {
     font-size: 14px;
     color: gray;
-    margin-left: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
     font-size: 20px;
 }
 
@@ -529,8 +534,9 @@ footer {
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     margin-top: 10px;
+    font-size: 30px;
 }
 
 
@@ -656,3 +662,209 @@ footer {
     background-color: #edf0f8;
  
 }
+@media (max-width: 768px) {
+    .landing-page{
+        width: 100%;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .partners{
+        width: 20%;
+        text-align: left;
+        margin-right: -100px;
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Trying responsiveness Samsung Galaxy S20 Ultra */
+@media (max-width: 1440px) {
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-buttons{
+        display: flex;
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+    }
+    .microsoft-logo{
+        width: 60px;
+    }
+    .company-name p{
+        font-size: 20px;
+    }
+    .features-header{
+        font-size: 20px;
+    }
+    .trello-logo{
+        width: 60px;
+    }
+    .dropbox-logo{
+        width: 60px;
+    }
+    .slack-logo{
+        width: 60px;
+    }
+    .left-section p{
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar{
+        width: 90%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .nav-links li a{
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .partners{
+        margin-left: 50px;
+    }
+    .app-interface-header{
+        font-size: 20px;
+    }
+    .red-text{
+        font-size: 20px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .partners-paragraph{
+        font-size: 20px;
+    }
+    .partners-num{
+        font-size: 20px;
+    }
+    .image-content{
+
+        display: none;
+
+    }
+    .testimonial-container{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .text-header{
+        font-size: 20px;
+    }
+    .feature-cards{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden ;
+    }
+    .card{
+        overflow: hidden;
+    }
+    .card h3{
+        overflow: hidden;
+    }
+    .card.study-with-me button{
+        overflow: hidden;
+        display: none;
+    
+    }
+    .card button{
+        overflow: hidden;
+    }
+    .card p {
+        overflow: hidden;
+    }
+    .join{
+        overflow: hidden;
+    }
+    .watch{
+        overflow: hidden;
+    }
+    .highlight{
+        font-size: 20px;
+    }
+    .text-context-paragraph{
+        font-size: 15px;
+    }
+    .profile-pic{
+        width: 90px;
+        height: 100px;
+    }
+    .apple-page-button{
+        width: 100px;
+        height: 55px;
+    }
+    
+    .play-page-button{
+        width: 100px;
+        height: 55px;
+    }
+    .mobile-interface{
+        width: 60%;
+    }
+    .images{
+        overflow:hidden
+    }
+    .right-section{
+        overflow: hidden;
+    }
+    .study-with-me{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .testimonial{
+        width: 300px;
+        height: 500px;
+    }
+    .review{
+        font-size: 12px;
+        width: 60%;
+    }
+    .names{
+        font-size: 15px;
+
+    }
+    .app-image{
+        width: 300px;
+    }
+    .app-download{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials{
+        height: 100vh;
+    }
+  }
+  
